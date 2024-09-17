@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1) Function Declaration: lotteryNumber
+function lotteryNumber() {
+    return 1 + Math.floor(Math.random() * 49);
+}
+
+// 2) Function Expression: getSixNumbers
+const getSixNumbers = function() {
+    for (let i = 0; i < 6; i++) {
+        console.log(lotteryNumber());
+    }
+};
+
+// Call the getSixNumbers function to log the numbers
+getSixNumbers();
+
+    </script>
+</body>
+</html>
